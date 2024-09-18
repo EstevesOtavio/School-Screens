@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="standart.css" />
+    <link rel="stylesheet" href="../standart.css" />
   </head>
   <body>
     <nav class="navbar bg-primary" data-bs-theme="dark">
@@ -55,79 +55,68 @@
 
     <section class="add-alunos">
       <div class="card" style="width: 18rem">
-        <h5 class="card-header">Cadastrar Disciplina</h5>
+        <h5 class="card-header">Dados do Professor</h5>
         <div class="card-body">
           <p class="card-text">
-            Preencha os campos abaixo para realizar o cadastro da nova
-            disciplina
+            Visualize ou Edite os dados do professor abaixo
           </p>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Código</label
+              >Nome</label
             >
             <input
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Código"
+              placeholder="Nome"
             />
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Descrição</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-              placeholder="Descrição"
-            ></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Carga Horária</label
+              >Endereço</label
             >
             <input
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Carga Horária"
+              placeholder="Endereço"
             />
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Ementa</label
+              >Telefone</label
             >
             <input
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Ementa"
+              placeholder="Telefone"
             />
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Bibliografia</label
+              >Máxima Titulação</label
             >
             <input
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Bibliografia"
+              placeholder="Graduação/Especialização/Mestrado/Doutorado"
             />
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Pré-requisitos</label
+              >Curso Vinculado</label
             >
             <input
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Pré-requisitos"
+              placeholder="Curso Vinculado"
             />
           </div>
-          <div class="container-btn">
+          <div class="container-btn container-btn-dados-professor">
+            <a href="#" class="btn btn-secondary">Alocar à Turma</a>
             <a href="#" class="btn btn-danger">Cancelar</a>
             <a href="#" class="btn btn-primary">Salvar</a>
           </div>

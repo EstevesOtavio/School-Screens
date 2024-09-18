@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="standart.css" />
+    <link rel="stylesheet" href="../standart.css" />
   </head>
   <body>
     <nav class="navbar bg-primary" data-bs-theme="dark">
@@ -55,11 +55,22 @@
 
     <section class="add-alunos">
       <div class="card" style="width: 18rem">
-        <h5 class="card-header">Cadastrar Professor</h5>
+        <h5 class="card-header">Dados do Aluno</h5>
         <div class="card-body">
           <p class="card-text">
-            Preencha os campos abaixo para realizar o cadastro do novo professor
+            Realize a visualização ou edição dos dados do aluno abaixo
           </p>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Matrícula</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Matrícula"
+            />
+          </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Nome</label
@@ -93,29 +104,9 @@
               placeholder="Telefone"
             />
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Máxima Titulação</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Graduação/Especialização/Mestrado/Doutorado"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Curso Vinculado</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Curso Vinculado"
-            />
-          </div>
-          <div class="container-btn">
+          <div class="container-btn container-btn-dados-alunos">
+            <a href="#" class="btn btn-success">Notas</a>
+            <a href="#" class="btn btn-secondary">Alocar à Turma</a>
             <a href="#" class="btn btn-danger">Cancelar</a>
             <a href="#" class="btn btn-primary">Salvar</a>
           </div>
