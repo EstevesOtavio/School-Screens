@@ -1,0 +1,158 @@
+body {
+  background: url(/resources/Bem-vindo\ à\ Fly\ Library\ \(4\).png);
+}
+
+.navbar-brand {
+  font-size: 2.2vh;
+  font-weight: 549;
+}
+
+.navbar-nav {
+  flex-direction: row;
+
+  li {
+    padding-right: 10px;
+  }
+}
+
+/* Tela com opções de cadastro */
+
+.cadastro {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  /* height: 90vh; */
+  width: 100vw;
+}
+
+.btn-outline-primary {
+  color: rgb(71, 67, 67);
+  background: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.205);
+  margin: 0px 10px;
+}
+
+.card-add-disciplina h5 {
+  font-size: 3.3vh;
+}
+
+/* Tela cadastro curso/alunos/professores/disciplina */
+
+.add-alunos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1.2px 1.1px rgba(0, 0, 0, 0.11);
+}
+
+.card-title {
+  font-size: 3.5vh;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-danger,
+.btn-secondary,
+.btn-success {
+  margin-right: 4px;
+}
+
+/* Tela Alunos */
+
+.list-alunos {
+  display: flex;
+  justify-content: center;
+}
+
+.list-group {
+  margin: 10px;
+  width: 90%;
+}
+
+@media (max-width: 375px) {
+  .add-alunos {
+    height: 120vh;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    width: 100vw;
+
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      a {
+        padding: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .container-btn-dados-alunos,
+  .container-btn-dados-professor {
+    flex-direction: column;
+
+    a {
+      margin: 5px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .card {
+    width: 70vw !important;
+  }
+
+  .cadastro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btns-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 60vw !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card {
+    width: 35vw !important;
+  }
+}
